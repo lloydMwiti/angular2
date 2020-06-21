@@ -1,0 +1,35 @@
+<header>
+  <div class="filler  v center">
+        <div class="topcard h " *ngIf="profile" >
+          <div class="">
+            <img src="{{profile.avatar_url}}" class="user_img" alt="">
+          </div>
+          <div class="w-100">
+            <div class="v ">
+              <p>{{profile.login}}</p> 
+              <a href="{profile.html_url}}" class="small">{{profile.html_url}}</a>
+            </div>
+            
+          </div>
+        </div>
+  </div>
+  <nav class="h between">
+    <div class="nav-title">git search</div>
+    <div class="search-holder h center">
+      <div class="search h center">
+        <input type="text" placeholder="search.." [(ngModel)]="username" name="username" (keyup)="findProfile()">
+        
+      </div>
+      
+    </div>
+    <div class="nav-end">
+      <a  class="logo" href="#" routerLink="/" alt="">home</a>
+      <a  class="logo" href="#" routerLink="/repo" alt="">repos</a>
+    </div>
+  </nav>
+</header>
+
+<div class="ww-100">
+  <router-outlet></router-outlet>  
+</div>
+<!-- <app-users [users]="users"></app-users> -->
