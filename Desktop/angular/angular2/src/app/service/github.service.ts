@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { apiKey } from '../../environments/environment';
+import {  environment } from '../../environments/environment';
 import { HttpClient, HttpClientModule} from '@angular/common/http';
 import { Observable } from 'rxjs'
 
@@ -8,7 +8,7 @@ import { Observable } from 'rxjs'
 })
 export class GithubService {
   private url = "https://api.github.com/users";
-  private apiKey=apiKey.key;
+  private apiKey=environment.key;
   public username :String;
 
   constructor(private http:HttpClient) {
