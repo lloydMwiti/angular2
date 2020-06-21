@@ -1,6 +1,24 @@
 # Angular2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
+## Developer
+ app was developed by lloyd mwiti
+
+## Developer Contact
+
+ lloydmwiti4@gmail.com
+
+## license
+
+There is no licence to the work but it is open source and free use
+
+## Goal
+
+the objective is an app that allows you to search for users repositories and github accounts as well as show you their info
+
+## live link
+
+https://lloydMwiti.github.io/angular2
 
 ## Development server
 

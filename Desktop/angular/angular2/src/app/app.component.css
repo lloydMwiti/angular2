@@ -57,16 +57,13 @@ nav>div{
 .logo{
     box-shadow: 0 .1rem .4rem -.1rem rgb(61, 61, 61);
     height:2.5rem;
-    background-size: cover;
-    background:rgb(2, 120, 255);
-    color: rgb(235, 235, 235);
     text-decoration: none;
-    width: 3.4rem;
+    background-image: url(../images/ca6e0904b3829cdf18a4e06f38b3a7cc.jpg);
+    width: 2.5rem;
+    background-position: center;
+    background-size: cover;
     margin: 0 .2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: .15rem;
+    border-radius: 5rem;
 }
 .filler{
     position: absolute;
@@ -150,4 +147,7 @@ h1{
     border-radius: .15rem;
     color: rgb(39, 39, 39);
     font-size: .95rem;
+}
+.repodesc{
+    padding: .2rem .5rem;
 }

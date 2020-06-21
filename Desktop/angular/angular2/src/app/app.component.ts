@@ -11,7 +11,7 @@ export class AppComponent {
   users:string[];
   username:string;
   profile:any;
-  repos:any;
+  repo:any;
 
  constructor(private githubservice:GithubService){
     this.githubservice.gitinit(this.username);
@@ -22,13 +22,13 @@ export class AppComponent {
 
     this.githubservice.gitRepos().subscribe(repos => {
       // console.log(repos);
-      this.repos = repos;
+      this.repo = repos;
     });
 
   }
   ngOnInit() { 
     this.githubservice.gitinit('lloydMwiti');
-    this.githubservice.gitRepos().subscribe(repos =>this.repos =repos);
+    this.githubservice.gitRepos().subscribe(repos =>this.repo =repos);
     this.githubservice.gitProfile().subscribe(profile =>this.profile =profile);
   }
 
@@ -41,7 +41,7 @@ export class AppComponent {
 
     this.githubservice.gitRepos().subscribe(repos => {
       // console.log(repos);
-      this.repos = repos;
+      this.repo = repos;
     });
   }
  
