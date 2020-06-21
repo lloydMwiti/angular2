@@ -8,7 +8,7 @@ import { Observable } from 'rxjs'
 })
 export class GithubService {
   private url = "https://api.github.com/users";
-  private apiKey=environment.key;
+  apiKey:string = environment.key;
   public username :String;
 
   constructor(private http:HttpClient) {
