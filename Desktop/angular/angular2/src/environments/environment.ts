@@ -4,10 +4,12 @@
 
 export const environment = {
   production: false,
-  key: "2e43fd822507b14f02075eca5666087aa44c2f69"
+  Git_Secret:"2e43fd822507b14f02075eca5666087aa44c2f69"
 
 };
 
+export const apiKey ={
+}
 
 /*
  * For easier debugging in development mode, you can import the following file

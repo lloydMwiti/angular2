@@ -8,7 +8,7 @@ import { Observable } from 'rxjs'
 })
 export class GithubService {
   private url = "https://api.github.com/users";
-  apiKey:string = environment.key;
+  public key:string = environment.Git_Secret;
   public username :String;
 
   constructor(private http:HttpClient) {
@@ -18,11 +18,11 @@ export class GithubService {
     return this.http.get<any>(this.url);
   }
   gitProfile(){
-    return this.http.get(this.url+ '/' + this.username + '?access_token=' + this.apiKey);
+    return this.http.get(this.url+ '/' + this.username + '?access_token=' + this.key);
   }
 
   gitRepos() {
-    return this.http.get(this.url+ '/' + this.username + '/repos' + '?access_token=' + this.apiKey);
+    return this.http.get(this.url+ '/' + this.username + '/repos' + '?access_token=' + this.key);
   }
   gitinit(user:String){
     this.username=user;
